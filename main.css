@@ -1,0 +1,110 @@
+*{margin: 0; padding: 0}
+*{box-sizing: border-box}
+ul, ol { list-style: none }
+body {
+  background: #f2f2f2;
+}
+header {
+  text-align: center;
+  color: #444444;
+  margin-top: 40px;
+}
+
+header > h1 {
+  font-weight: normal;
+  font-size: 42px;
+  font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+header > p {
+  font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+header p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+header p.link {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+header > p.link > a {
+  color: #0196e3;
+  text-decoration: none;
+}
+
+.window {
+  width: 920px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 25px;
+  box-shadow: 0px 0px 2px 1px rgba(186,184,186,1);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: url(images/panel.jpg) repeat-x bottom center #ffffff;
+}
+
+.images {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.menu {
+  height: 45px;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu > ul > li {
+  width: 60px;
+  height: 45px;
+}
+
+.menu > ul > li > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  background: url(images/divider.png) no-repeat right;
+}
+
+.menu > ul > li.item.active {
+  background: url(images/active_bg.png) no-repeat;
+}
+
+.menu > ul > li.leftDivider {
+  width: 2px;
+  background: url(images/divider.png) no-repeat right;
+}
+
+.macPic {
+  align-self: flex-end;
+  margin-top: 12px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 17px;
+}
+
+footer p > a {
+  color: #0196e3;
+  text-decoration: none;
+}
+
+footer p.description {
+  font-size: 13px
+}
+footer p.author {
+  font-size: 10px
+}
